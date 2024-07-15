@@ -1,0 +1,69 @@
+\documentclass[english, 11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[top = 2cm, left = 2.5cm, right = 2.5cm, bottom = 2cm]{geometry}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amstext}
+\usepackage{mdframed}
+\usepackage{graphicx}
+\usepackage{bbm}
+\makeatletter
+\@ifundefined{date}{}{\date{}}
+\usepackage{tikz}
+\usetikzlibrary{quotes, angles, decorations.markings, intersections}
+\usetikzlibrary{calc,patterns,angles,quotes, 3d, intersections, positioning, shapes, automata, positioning}
+\usepackage{wasysym}
+\makeatother
+\usepackage{babel}
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\newcommand{\tbox}[1]{\noindent\fbox{\parbox{\textwidth}{#1}}}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\noindent\tbox{
+\hfill 10/03/2024
+\begin{center}
+  \huge Programming Assignment 1 \\ % change lecture number
+  \Large CS 218 : Design and Analysis of Algorithms % Short topic description
+\end{center}
+\textit{Done by}: NIKIL S% <NAME> (<Roll Number>)
+}
+
+\section*{Algorithm}
+
+My algorithm is based on divide and conquer method similar to mergesort. So, I decided to name
+the two main functions that implement the algorithm as \textit{merge()} and \textit{mergesort()}. 
+\textit{mergesort()} function takes in parameters posters vector, starting index and ending index.
+It is a recursive function that merges two different outlines every time it calls \textit{merge()}. \textit{merge()} 
+takes in parameters two vectors of Points, representing two outlines, and returns a single merged vector of Points. 
+The \textit{merge()} function is of \textbf{O(n)} while the \textit{mergesort()} function is called \textbf{O(log(n))} times. 
+So, effectively the overall order of the algorithm is \textbf{O(nlog(n))}. \\
+
+The \textit{merge()} function performs different operations to merge the two outlines by operating with two points at a time, 
+each from the different outlines. I maintain a variable called \textit{dom} that indicates whether the previously pushed point is of outline1 or outline2.
+ The major two cases handled by it are:
+\begin{itemize}
+    \item If the point to be pushed is of different outline from previous, then it pushes the intersection point and the point.
+    \item Else, it pushes only the point.
+\end{itemize}
+
+The point to be pushed is determined by the y-value of both the outlines at that particular x-value, the higher value, is pushed.
+
+\section*{Area and Length}
+The area and length required are calculated by the functions \textit{area\_of\_outline()} and \textit{lengthCovered\_of\_outline()} respectively.
+
+\section*{Other functions}
+To help with the implementation of the algorithm, I have defined other functions like \textit{solve\_pt\_on\_line()}, \textit{intersection\_pt()}, and \textit{remove\_pts()}.
+\end{document}

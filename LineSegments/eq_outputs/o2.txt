@@ -1,0 +1,7 @@
+Time taken for merge: 0 milliseconds
+Time taken for remove: 0 milliseconds
+Time taken for length: 0 milliseconds
+Time taken for area: 0 milliseconds
+14
+6
+25

@@ -1,0 +1,7 @@
+Time taken for merge: 946 milliseconds
+Time taken for remove: 28 milliseconds
+Time taken for length: 6 milliseconds
+Time taken for area: 7 milliseconds
+364357
+224888
+111764752

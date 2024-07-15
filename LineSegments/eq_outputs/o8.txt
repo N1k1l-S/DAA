@@ -1,0 +1,7 @@
+Time taken for merge: 460 milliseconds
+Time taken for remove: 14 milliseconds
+Time taken for length: 3 milliseconds
+Time taken for area: 3 milliseconds
+167228
+109773
+21834812

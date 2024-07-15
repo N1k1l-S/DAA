@@ -1,0 +1,4 @@
+https://www.geeksforgeeks.org/check-if-two-given-line-segments-intersect/
+https://byjus.com/maths/two-point-form/
+https://en.wikipedia.org/wiki/Line%E2%80%93line_intersection#Given_two_points_on_each_line
+218 slides

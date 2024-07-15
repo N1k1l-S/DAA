@@ -1,0 +1,7 @@
+Time taken for merge: 165 milliseconds
+Time taken for remove: 8 milliseconds
+Time taken for length: 1 milliseconds
+Time taken for area: 1 milliseconds
+33335
+20929
+2045724
